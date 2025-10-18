@@ -13,7 +13,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(180deg, var(--bg), #03233a);
+  background: linear-gradient(180deg, var(--bg), blue);
   color: #e6f0f6;
   display: flex;
   align-items: center;
