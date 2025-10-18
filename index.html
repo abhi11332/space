@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Dodger 🚀</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrap">
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="overlay active">
+      <h1>🚀 Space Dodger</h1>
+      <p>Avoid the asteroids and survive as long as possible!</p>
+      <button id="start-btn" class="primary">Start Game</button>
+    </div>
+
+    <!-- Canvas Area -->
+    <canvas id="gameCanvas" width="640" height="480"></canvas>
+
+    <!-- Game Info Panel -->
+    <div class="panel">
+      <h1>Game Info</h1>
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="stats">
+        <span>Level: <span id="level">1</span></span>
+        <span>High Score: <span id="highscore">0</span></span>
+      </div>
+      <div class="controls">
+        <button id="pause-btn">⏸ Pause</button>
+        <button id="restart-btn">🔁 Restart</button>
+      </div>
+      <div class="touch-controls">
+        <button id="left-btn">⬅</button>
+        <button id="right-btn">➡</button>
+      </div>
+      <div class="hint">Use arrow keys or buttons to move</div>
+    </div>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="game-over" class="overlay">
+    <h1>💥 Game Over</h1>
+    <p>Your Score: <span id="final-score">0</span></p>
+    <button id="play-again" class="primary">Play Again</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
